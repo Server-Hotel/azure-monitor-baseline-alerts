@@ -52,6 +52,14 @@
           "assignPermissions": true
         }
       },
+      "threshold": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Threshold",
+          "description": "Threshold for the alert"
+        },
+        "defaultValue": "20"
+      },
       "severity": {
         "type": "String",
         "metadata": {
@@ -543,6 +551,9 @@
                         },
                         "UAMIResourceId": {
                           "value": "[[parameters('UAMIResourceId')]"
+                        },
+                        "threshold": {
+                          "value": "[[parameters('threshold')]" 
                         }
                       }
                     }
